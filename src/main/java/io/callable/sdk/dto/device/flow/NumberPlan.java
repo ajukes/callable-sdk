@@ -1,0 +1,16 @@
+package io.callable.sdk.dto.device.flow;
+
+import lombok.Builder;
+import lombok.Getter;
+
+import java.util.List;
+
+@Getter
+@Builder
+public class NumberPlan extends Connector {
+    private String text;
+    private Integer timeout;
+    private String finishOnKey;
+    private Integer maxDigits;
+    private List<Option> options;
+}

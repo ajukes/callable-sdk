@@ -1,0 +1,257 @@
+package io.callable.sdk.enums;
+
+public enum GoogleTTSLanguage {
+
+    Arabic_Standard_A_Female("ar-XA-Standard-A"),
+    Arabic_Standard_B_Male("ar-XA-Standard-B"),
+    Arabic_Standard_C_Male("ar-XA-Standard-C"),
+    Arabic_Standard_D_Female("ar-XA-Standard-D"),
+    Arabic_Wavenet_A_Female("ar-XA-Wavenet-A"),
+    Arabic_Wavenet_B_Male("ar-XA-Wavenet-B"),
+    Arabic_Wavenet_C_Male("ar-XA-Wavenet-C"),
+
+    Czech_Standard_A_Female("cs-CZ-Standard-A"),
+    Czech_Wavenet_A_Female("cs-CZ-Wavenet-A"),
+
+    Danish_Standard_A_Female("da-DK-Standard-A"),
+    Danish_Wavenet_A_Female("da-DK-Wavenet-A"),
+
+    Dutch_Standard_A_Female("nl-NL-Standard-A"),
+    Dutch_Standard_B_Male("nl-NL-Standard-B"),
+    Dutch_Standard_C_Male("nl-NL-Standard-C"),
+    Dutch_Standard_D_Female("nl-NL-Standard-D"),
+    Dutch_Standard_E_Female("nl-NL-Standard-E"),
+    Dutch_Wavenet_A_Female("nl-NL-Wavenet-A"),
+    Dutch_Wavenet_B_Male("nl-NL-Wavenet-B"),
+    Dutch_Wavenet_C_Male("nl-NL-Wavenet-C"),
+    Dutch_Wavenet_D_Female("nl-NL-Wavenet-D"),
+    Dutch_Wavenet_E_Female("nl-NL-Wavenet-E"),
+
+    English_AU_Standard_A_Female("en-AU-Standard-A"),
+    English_AU_Standard_B_Male("en-AU-Standard-B"),
+    English_AU_Standard_C_Female("en-AU-Standard-C"),
+    English_AU_Standard_D_Male("en-AU-Standard-D"),
+    English_AU_Wavenet_A_Female("en-AU-Wavenet-A"),
+    English_AU_Wavenet_B_Male("en-AU-Wavenet-B"),
+    English_AU_Wavenet_C_Female("en-AU-Wavenet-C"),
+    English_AU_Wavenet_D_Male("en-AU-Wavenet-D"),
+
+    English_India_Standard_A_Female("en-IN-Standard-A"),
+    English_India_Standard_B_Male("en-IN-Standard-B"),
+    English_India_Standard_C_Male("en-IN-Standard-C"),
+    English_India_Standard_D_Female("en-IN-Standard-D"),
+    English_India_Wavenet_A_Female("en-IN-Wavenet-A"),
+    English_India_Wavenet_B_Male("en-IN-Wavenet-B"),
+    English_India_Wavenet_C_Male("en-IN-Wavenet-C"),
+    English_India_Wavenet_D_Female("en-IN-Wavenet-D"),
+
+    English_UK_Standard_A_Female("en-GB-Standard-A"),
+    English_UK_Standard_B_Male("en-GB-Standard-B"),
+    English_UK_Standard_C_Female("en-GB-Standard-C"),
+    English_UK_Standard_D_Male("en-GB-Standard-D"),
+    English_UK_Wavenet_A_Female("en-GB-Wavenet-A"),
+    English_UK_Wavenet_B_Male("en-GB-Wavenet-B"),
+    English_UK_Wavenet_C_Female("en-GB-Wavenet-C"),
+    English_UK_Wavenet_D_Male("en-GB-Wavenet-D"),
+
+    English_US_Standard_B_Male("en-US-Standard-B"),
+    English_US_Standard_C_Female("en-US-Standard-C"),
+    English_US_Standard_D_Male("en-US-Standard-D"),
+    English_US_Standard_E_Male("en-US-Standard-E"),
+    English_US_Wavenet_A_Male("en-US-Wavenet-A"),
+    English_US_Wavenet_B_Male("en-US-Wavenet-B"),
+    English_US_Wavenet_C_Female("en-US-Wavenet-C"),
+    English_US_Wavenet_D_Male("en-US-Wavenet-D"),
+    English_US_Wavenet_E_Female("en-US-Wavenet-E"),
+    English_US_Wavenet_F_Female("en-US-Wavenet-F"),
+
+
+    Filipino_PH_Standard_A_Female("fil-PH-Standard-A"),
+    Filipino_PH_Wavenet_A_Female("fil-PH-Wavenet-A"),
+
+    Finnish_FI_Standard_A_Female("fi-FI-Standard-A"),
+    Finnish_FI_Wavenet_A_Female("fi-FI-Wavenet-A"),
+
+    French_CA_Standard_A_Female("fr-CA-Standard-A"),
+    French_CA_Standard_B_Male("fr-CA-Standard-B"),
+    French_CA_Standard_C_Female("fr-CA-Standard-C"),
+    French_CA_Standard_D_Male("fr-CA-Standard-D"),
+    French_CA_Wavenet_A_Female("fr-CA-Wavenet-A"),
+    French_CA_Wavenet_B_Male("fr-CA-Wavenet-B"),
+    French_CA_Wavenet_C_Female("fr-CA-Wavenet-C"),
+    French_CA_Wavenet_D_Male("fr-CA-Wavenet-D"),
+
+    French_FR_Standard_A_Female("fr-FR-Standard-A"),
+    French_FR_Standard_B_Male("fr-FR-Standard-B"),
+    French_FR_Standard_C_Female("fr-FR-Standard-C"),
+    French_FR_Standard_D_Male("fr-FR-Standard-D"),
+    French_FR_Standard_E_Female("fr-FR-Standard-E"),
+    French_FR_Wavenet_A_Female("fr-FR-Wavenet-A"),
+    French_FR_Wavenet_B_Male("fr-FR-Wavenet-B"),
+    French_FR_Wavenet_C_Female("fr-FR-Wavenet-C"),
+    French_FR_Wavenet_D_Male("fr-FR-Wavenet-D"),
+    French_FR_Wavenet_E_Female("fr-FR-Wavenet-E"),
+
+    German_DE_Standard_A_Female("de-DE-Standard-A"),
+    German_DE_Standard_B_Male("de-DE-Standard-B"),
+    German_DE_Standard_E_Male("de-DE-Standard-C"),
+    German_DE_Standard_F_Female("de-DE-Standard-D"),
+    German_DE_Wavenet_A_Female("de-DE-Wavenet-A"),
+    German_DE_Wavenet_B_Male("de-DE-Wavenet-B"),
+    German_DE_Wavenet_C_Female("de-DE-Wavenet-C"),
+    German_DE_Wavenet_D_Male("de-DE-Wavenet-D"),
+    German_DE_Wavenet_E_Male("de-DE-Wavenet-E"),
+    German_DE_Wavenet_F_Female("de-DE-Wavenet-F"),
+
+    Greek_GR_Standard_A_Female("el-GR-Standard-A"),
+    Greek_GR_Wavenet_A_Female("el-GR-Wavenet-A"),
+
+    Hindi_India_Standard_A_Female("hi-IN-Standard-A"),
+    Hindi_India_Standard_B_Male("hi-IN-Standard-B"),
+    Hindi_India_Standard_C_Male("hi-IN-Standard-C"),
+    Hindi_India_Standard_D_Female("hi-IN-Standard-D"),
+    Hindi_India_Wavenet_A_Female("hi-IN-Wavenet-A"),
+    Hindi_India_Wavenet_B_Male("hi-IN-Wavenet-B"),
+    Hindi_India_Wavenet_C_Male("hi-IN-Wavenet-C"),
+    Hindi_India_Wavenet_D_Female("hi-IN-Wavenet-D"),
+
+    Hungarian_HU_Standard_A_Female("hu-HU-Standard-A"),
+    Hungarian_HU_Wavenet_A_Female("hu-HU-Wavenet-A"),
+
+    Indonesian_ID_Standard_A_Female("id-ID-Standard-A"),
+    Indonesian_ID_Standard_B_Male("id-ID-Standard-B"),
+    Indonesian_ID_Standard_C_Male("id-ID-Standard-C"),
+    Indonesian_ID_Standard_D_Female("id-ID-Standard-D"),
+    Indonesian_ID_Wavenet_A_Female("id-ID-Wavenet-A"),
+    Indonesian_ID_Wavenet_B_Male("id-ID-Wavenet-B"),
+    Indonesian_ID_Wavenet_C_Male("id-ID-Wavenet-C"),
+    Indonesian_ID_Wavenet_D_Female("id-ID-Wavenet-D"),
+
+    Italian_IT_Standard_A_Female("it-IT-Standard-A"),
+    Italian_IT_Standard_B_Female("it-IT-Standard-B"),
+    Italian_IT_Standard_C_Male("it-IT-Standard-C"),
+    Italian_IT_Standard_D_Male("it-IT-Standard-D"),
+    Italian_IT_Wavenet_A_Female("it-IT-Wavenet-A"),
+    Italian_IT_Wavenet_B_Female("it-IT-Wavenet-B"),
+    Italian_IT_Wavenet_C_Male("it-IT-Wavenet-C"),
+    Italian_IT_Wavenet_D_Male("it-IT-Wavenet-D"),
+
+    Japanese_JP_Standard_A_Female("js-JP-Standard-A"),
+    Japanese_JP_Standard_B_Female("js-JP-Standard-B"),
+    Japanese_JP_Standard_C_Male("js-JP-Standard-C"),
+    Japanese_JP_Standard_D_Male("js-JP-Standard-D"),
+    Japanese_JP_Wavenet_A_Female("js-JP-Wavenet-A"),
+    Japanese_JP_Wavenet_B_Female("js-JP-Wavenet-B"),
+    Japanese_JP_Wavenet_C_Male("js-JP-Wavenet-C"),
+    Japanese_JP_Wavenet_D_Male("js-JP-Wavenet-D"),
+
+    Korean_KR_Standard_A_Female("ko-KR-Standard-A"),
+    Korean_KR_Standard_B_Female("ko-KR-Standard-B"),
+    Korean_KR_Standard_C_Male("ko-KR-Standard-C"),
+    Korean_KR_Standard_D_Male("ko-KR-Standard-D"),
+    Korean_KR_Wavenet_A_Female("ko-KR-Wavenet-A"),
+    Korean_KR_Wavenet_B_Female("ko-KR-Wavenet-B"),
+    Korean_KR_Wavenet_C_Male("ko-KR-Wavenet-C"),
+    Korean_KR_Wavenet_D_Male("ko-KR-Wavenet-D"),
+
+    Mandarin_CN_Standard_A_Female("cmn-CN-Standard-A"),
+    Mandarin_CN_Standard_B_Male("cmn-CN-Standard-B"),
+    Mandarin_CN_Standard_C_Male("cmn-CN-Standard-C"),
+    Mandarin_CN_Standard_D_Female("cmn-CN-Standard-D"),
+    Mandarin_CN_Wavenet_A_Female("cmn-CN-Wavenet-A"),
+    Mandarin_CN_Wavenet_B_Male("cmn-CN-Wavenet-B"),
+    Mandarin_CN_Wavenet_C_Male("cmn-CN-Wavenet-C"),
+    Mandarin_CN_Wavenet_D_Female("cmn-CN-Wavenet-D"),
+
+    Mandarin_TW_Standard_A_Alpha("cmn-TW-Standard-A-Alpha"),
+    Mandarin_TW_Standard_B_Alpha("cmn-TW-Standard-B-Alpha"),
+    Mandarin_TW_Standard_C_Alpha("cmn-TW-Standard-C-Alpha"),
+    Mandarin_TW_Wavenet_A_Alpha("cmn-TW-Wavenet-A-Alpha"),
+    Mandarin_TW_Wavenet_B_Alpha("cmn-TW-Wavenet-B-Alpha"),
+    Mandarin_TW_Wavenet_C_Alpha("cmn-TW-Wavenet-C-Alpha"),
+
+    Norwegian_NO_Standard_A_Female("nb-NO-Standard-A"),
+    Norwegian_NO_Standard_B_Male("nb-NO-Standard-B"),
+    Norwegian_NO_Standard_C_Female("nb-NO-Standard-C"),
+    Norwegian_NO_Standard_D_Male("nb-NO-Standard-D"),
+    Norwegian_NO_Wavenet_A_Female("nb-NO-Wavenet-A"),
+    Norwegian_NO_Wavenet_B_Male("nb-NO-Wavenet-B"),
+    Norwegian_NO_Wavenet_C_Female("nb-NO-Wavenet-C"),
+    Norwegian_NO_Wavenet_D_Male("nb-NO-Wavenet-D"),
+
+    Polish_PL_Standard_A_Female("pl=PL-Standard-A"),
+    Polish_PL_Standard_B_Male("pl=PL-Standard-B"),
+    Polish_PL_Standard_C_Male("pl=PL-Standard-C"),
+    Polish_PL_Standard_D_Female("pl=PL-Standard-D"),
+    Polish_PL_Standard_E_Female("pl=PL-Standard-E"),
+    Polish_PL_Wavenet_A_Female("pl=PL-Wavenet-A"),
+    Polish_PL_Wavenet_B_Male("pl=PL-Wavenet-B"),
+    Polish_PL_Wavenet_C_Male("pl=PL-Wavenet-C"),
+    Polish_PL_Wavenet_D_Female("pl=PL-Wavenet-D"),
+    Polish_PL_Wavenet_E_Female("pl=PL-Wavenet-E"),
+
+    Portuguese_BR_Standard_A_Female("pt-BR-Standard-A"),
+    Portuguese_BR_Wavenet_A_Female("pt-BR-Wavenet-A"),
+
+    Portuguese_PT_Standard_A_Female("pt-PT-Standard-A"),
+    Portuguese_PT_Standard_B_Male("pt-PT-Standard-B"),
+    Portuguese_PT_Standard_C_Male("pt-PT-Standard-C"),
+    Portuguese_PT_Standard_D_Female("pt-PT-Standard-D"),
+    Portuguese_PT_Wavenet_A_Female("pt-PT-Wavenet-A"),
+    Portuguese_PT_Wavenet_B_Male("pt-PT-Wavenet-B"),
+    Portuguese_PT_Wavenet_C_Male("pt-PT-Wavenet-C"),
+    Portuguese_PT_Wavenet_D_Female("pt-PT-Wavenet-D"),
+
+    Russian_RU_Standard_A_Female("ru-RU-Standard-A"),
+    Russian_RU_Standard_B_Male("ru-RU-Standard-B"),
+    Russian_RU_Standard_C_Female("ru-RU-Standard-C"),
+    Russian_RU_Standard_D_Male("ru-RU-Standard-D"),
+    Russian_RU_Standard_E_Female("ru-RU-Standard-E"),
+    Russian_RU_Wavenet_A_Female("ru-RU-Wavenet-A"),
+    Russian_RU_Wavenet_B_Male("ru-RU-Wavenet-B"),
+    Russian_RU_Wavenet_C_Female("ru-RU-Wavenet-C"),
+    Russian_RU_Wavenet_D_Male("ru-RU-Wavenet-D"),
+    Russian_RU_Wavenet_E_Female("ru-RU-Wavenet-E"),
+
+    Slovak_SK_Standard_A_Female("sk-SK-Standard-A"),
+    Slovak_SK_Wavenet_A_Female("sk-SK-Wavenet-A"),
+
+    Spanish_ES_Standard_A_Female("es-ES-Standard-A"),
+
+    Swedish_SE_Standard_A_Female("sv-SE-Standard-A"),
+    Swedish_SE_Wavenet_A_Female("sv-SE-Wavenet-A"),
+
+    Turkish_TR_Standard_A_Female("tr-TR-Standard-A"),
+    Turkish_TR_Standard_B_Male("tr-TR-Standard-B"),
+    Turkish_TR_Standard_C_Female("tr-TR-Standard-C"),
+    Turkish_TR_Standard_D_Female("tr-TR-Standard-D"),
+    Turkish_TR_Standard_E_Male("tr-TR-Standard-E"),
+    Turkish_TR_Wavenet_A_Female("tr-TR-Wavenet-A"),
+    Turkish_TR_Wavenet_B_Male("tr-TR-Wavenet-B"),
+    Turkish_TR_Wavenet_C_Female("tr-TR-Wavenet-C"),
+    Turkish_TR_Wavenet_D_Female("tr-TR-Wavenet-D"),
+    Turkish_TR_Wavenet_E_Male("tr-TR-Wavenet-E"),
+
+    Ukranian_UA_Standard_A_Female("uk-UA-Standard-A"),
+    Ukranian_UA_Wavenet_A_Female("uk-UA-Wavenet-A"),
+
+    Vietnamese_VN_Standard_A_Female("vi-VN-Standard-A"),
+    Vietnamese_VN_Standard_B_Male("vi-VN-Standard-B"),
+    Vietnamese_VN_Standard_C_Female("vi-VN-Standard-C"),
+    Vietnamese_VN_Standard_D_Male("vi-VN-Standard-D"),
+    Vietnamese_VN_Wavenet_A_Female("vi-VN-Wavenet-A"),
+    Vietnamese_VN_Wavenet_B_Male("vi-VN-Wavenet-B"),
+    Vietnamese_VN_Wavenet_C_Female("vi-VN-Wavenet-C"),
+    Vietnamese_VN_Wavenet_D_Male("vi-VN-Wavenet-D");
+
+    private String language;
+
+    private GoogleTTSLanguage(String language) {
+        this.language = language;
+    }
+
+    public String getLanguage() {
+        return this.language;
+    }
+
+}
