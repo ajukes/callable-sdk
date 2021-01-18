@@ -1,6 +1,6 @@
 package io.callable.sdk.enums;
 
-public enum CallbackApplication {
+public enum ApplicationType {
 
     IVR_MAGENTA("ViVa-D2C"),
     IVR_MTI("ivr.mti"),
@@ -17,7 +17,7 @@ public enum CallbackApplication {
 
     private String application;
 
-    private CallbackApplication(String application) {
+    private ApplicationType(String application) {
         this.application = application;
     }
 

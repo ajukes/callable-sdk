@@ -6,7 +6,6 @@ import lombok.Getter;
 @Getter
 @Builder
 public class AddressPutRequest {
-    private String customerId;
     private String line1;
     private String line2;
     private String level1;

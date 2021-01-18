@@ -1,9 +1,10 @@
 package io.callable.sdk.dto.address;
 
-import lombok.Data;
+import lombok.Builder;
 import lombok.Getter;
 
 @Getter
+@Builder
 public class Address {
     private String line1;
     private String line2;

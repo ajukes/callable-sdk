@@ -16,8 +16,4 @@ class CallableClientImpl implements CallableClient {
         return new OrganisationServiceImpl();
     }
 
-    @Override
-    public AccountService account(String id) {
-        return new AccountServiceImpl(id);
-    }
 }

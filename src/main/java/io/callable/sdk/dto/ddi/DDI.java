@@ -1,17 +1,12 @@
 package io.callable.sdk.dto.ddi;
 
+import lombok.Data;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
-@Getter
+@Data
+@NoArgsConstructor
 public class DDI {
     private String id;
     private String name;
-    private String direction;
-    private String match;
-    private Boolean record;
-    private String present;
-    private Boolean mbn;
-    private String trunk;
-    private String ivr;
-    private String device;
 }

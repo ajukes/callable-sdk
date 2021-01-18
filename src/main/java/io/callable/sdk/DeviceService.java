@@ -1,9 +1,9 @@
 package io.callable.sdk;
 
-import uk.co.viva.dataobjects.device.Device;
-import uk.co.viva.dataobjects.device.DevicePostRequest;
-import uk.co.viva.dataobjects.device.DevicePutRequest;
-import uk.co.viva.dataobjects.sdk.enums.DeviceType;
+import io.callable.sdk.dto.device.Device;
+import io.callable.sdk.dto.device.DevicePostRequest;
+import io.callable.sdk.dto.device.DevicePutRequest;
+import io.callable.sdk.enums.DeviceType;
 
 import java.util.List;
 
@@ -17,7 +17,7 @@ public interface DeviceService {
 
     Device create(DevicePostRequest postRequest);
 
-    void update(DevicePutRequest putRequest);
+    void update(DevicePutRequest putRequest, String id);
 
     void remove(String id);
 }

@@ -1,9 +1,9 @@
 package io.callable.sdk;
 
-import uk.co.viva.dataobjects.sdk.enums.SettingsKey;
-import uk.co.viva.dataobjects.setting.Settings;
-import uk.co.viva.dataobjects.setting.SettingsPostRequest;
-import uk.co.viva.dataobjects.setting.SettingsPutRequest;
+import io.callable.sdk.dto.setting.Settings;
+import io.callable.sdk.dto.setting.SettingsPostRequest;
+import io.callable.sdk.dto.setting.SettingsPutRequest;
+import io.callable.sdk.enums.SettingsKey;
 
 import java.util.List;
 
@@ -43,8 +43,8 @@ class SettingsServiceImpl extends ServiceImpl implements SettingsService {
     }
 
     @Override
-    public void update(SettingsPutRequest putRequest) {
-        client.put(String.format(BASE_URL, id) + "/" + putRequest.getId(), putRequest, Void.class);
+    public void update(SettingsPutRequest putRequest, String childId) {
+        client.put(String.format(BASE_URL, id) + "/" + childId, putRequest, Void.class);
     }
 
     @Override

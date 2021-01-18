@@ -1,12 +1,11 @@
-package io.callable.sdk.dto.callback;
+package io.callable.sdk.dto.integration;
 
 import lombok.Builder;
-import lombok.Getter;
+import lombok.Data;
 
-@Getter
+@Data
 @Builder
-public class CallbackURLPostRequest {
-    private String id;
+public class IntegrationPutRequest {
     private String app;
     private String url;
     private String method;

@@ -8,14 +8,21 @@ public interface AccountService {
 
     void remove();
 
-    AssetService assets();
+    AddressService address();
 
-    DeviceService devices();
+    AssetService assets();
 
     DDIService ddis();
 
-    AddressService address();
+    DeviceService devices();
 
-    CallService calls();
+    IntegrationService integrations();
+
+    SettingsService settings();
+
+    TrunkService trunks();
+
+    VoiceService calls();
+
 
 }

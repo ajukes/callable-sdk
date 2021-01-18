@@ -1,18 +1,20 @@
-package io.callable.sdk.dto.callback;
+package io.callable.sdk.dto.integration;
 
+import lombok.Builder;
 import lombok.Getter;
 
 @Getter
-public class CallbackURL {
+@Builder
+public class IntegrationPostRequest {
     private String id;
     private String app;
     private String url;
+    private String method;
+    private Integer priority;
     private String authType;
     private String apiKeyName;
     private String apiKeyValue;
     private String apiSecretName;
     private String apiSecretValue;
     private String endpoint;
-    private String method;
-    private Integer priority;
 }

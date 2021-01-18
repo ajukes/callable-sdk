@@ -26,5 +26,15 @@ class OrganisationServiceImpl extends ServiceImpl implements OrganisationService
         return client.post("customers", postRequest, Account.class);
     }
 
+    @Override
+    public AccountService account(String id) {
+        return new AccountServiceImpl(id);
+    }
+
+    @Override
+    public ChannelService channel(String id) {
+        return new ChannelServiceImpl(id);
+    }
+
 
 }

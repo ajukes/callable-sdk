@@ -14,4 +14,7 @@ public interface OrganisationService {
 
     Account create(AccountPostRequest postRequest);
 
+    AccountService account(String id);
+
+    ChannelService channel(String id);
 }

@@ -1,9 +1,9 @@
 package io.callable.sdk;
 
-import uk.co.viva.dataobjects.device.Device;
-import uk.co.viva.dataobjects.device.DevicePostRequest;
-import uk.co.viva.dataobjects.device.DevicePutRequest;
-import uk.co.viva.dataobjects.sdk.enums.DeviceType;
+import io.callable.sdk.dto.device.Device;
+import io.callable.sdk.dto.device.DevicePostRequest;
+import io.callable.sdk.dto.device.DevicePutRequest;
+import io.callable.sdk.enums.DeviceType;
 
 import java.util.Arrays;
 import java.util.List;
@@ -45,8 +45,8 @@ class DeviceServiceImpl extends ServiceImpl implements DeviceService {
     }
 
     @Override
-    public void update(DevicePutRequest putRequest) {
-       client.put(String.format(BASE_URL, id) + "/" + putRequest.getId(), putRequest, Void.class);
+    public void update(DevicePutRequest putRequest, String childId) {
+       client.put(String.format(BASE_URL, id) + "/" + childId, putRequest, Void.class);
     }
 
     @Override

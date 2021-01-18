@@ -5,11 +5,9 @@ import org.jetbrains.annotations.NotNull;
 
 @Getter
 public class AssetPutRequest {
-    private String id;
     private String name;
 
-    public AssetPutRequest(@NotNull String id, @NotNull String name) {
-        this.id = id;
+    public AssetPutRequest( @NotNull String name) {
         this.name = name;
     }
 }

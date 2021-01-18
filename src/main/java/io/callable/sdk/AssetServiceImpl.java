@@ -31,8 +31,8 @@ class AssetServiceImpl extends ServiceImpl implements AssetService {
     }
 
     @Override
-    public void update(AssetPutRequest putRequest) {
-        client.put(String.format(BASE_URL, id) + "/" + putRequest.getId(), putRequest, Void.class);
+    public void update(AssetPutRequest putRequest, String childId) {
+        client.put(String.format(BASE_URL, id) + "/" + childId, putRequest, Void.class);
     }
 
     @Override

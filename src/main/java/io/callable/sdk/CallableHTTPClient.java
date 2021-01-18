@@ -16,6 +16,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.time.Instant;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 @Slf4j
@@ -57,6 +58,9 @@ class CallableHTTPClient {
         this.objectMapper = new ObjectMapper()
 //                .setPropertyNamingStrategy(PropertyNamingStrategy.SNAKE_CASE)
                 .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+
+        Objects.requireNonNull(username);
+        Objects.requireNonNull(password);
 
         authorise();
     }
@@ -135,7 +139,7 @@ class CallableHTTPClient {
 
 
     public <T> T list(String path, Class<?> clazz) {
-
+        checkToken();
         try {
             Request request = new Request.Builder()
                     .url(url + path)
@@ -157,7 +161,7 @@ class CallableHTTPClient {
     }
 
     public <T> T get(String path, Class<T> clazz) {
-
+        checkToken();
         try {
             Request request = new Request.Builder()
                     .url(url + path)
@@ -180,6 +184,7 @@ class CallableHTTPClient {
     }
 
     public <T> T post(String path, Object obj, Class<T> clazz) {
+        checkToken();
         try {
             String json = objectMapper.writeValueAsString(obj);
             RequestBody body = RequestBody.create(json, JSON);
@@ -203,6 +208,7 @@ class CallableHTTPClient {
     }
 
     public <T> T put(String path, Object obj, Class<T> clazz) {
+        checkToken();
         try {
             String json = objectMapper.writeValueAsString(obj);
             RequestBody body = RequestBody.create(json, JSON);
@@ -225,6 +231,7 @@ class CallableHTTPClient {
     }
 
     public void remove(String path) {
+        checkToken();
         try {
             Request request = new Request.Builder()
                     .url(url + path)
@@ -255,6 +262,7 @@ class CallableHTTPClient {
 
 
     public boolean upload(String path, File file) {
+        checkToken();
         try {
 
             if (file.length() > 104857600) {

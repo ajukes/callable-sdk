@@ -14,7 +14,7 @@ public interface AssetService {
 
     Boolean upload(File file);
 
-    void update(AssetPutRequest putRequest);
+    void update(AssetPutRequest putRequest, String id);
 
     void remove(String id);
 }

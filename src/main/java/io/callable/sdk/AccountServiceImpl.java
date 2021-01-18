@@ -31,6 +31,21 @@ class AccountServiceImpl extends ServiceImpl implements AccountService {
     }
 
     @Override
+    public IntegrationService integrations() {
+        return new IntegrationServiceImpl(id);
+    }
+
+    @Override
+    public SettingsService settings() {
+        return new SettingsServiceImpl(id);
+    }
+
+    @Override
+    public TrunkService trunks() {
+        return new TrunkServiceImpl(id);
+    }
+
+    @Override
     public DDIService ddis() {
         return new DDIServiceImpl(id);
     }
@@ -41,8 +56,8 @@ class AccountServiceImpl extends ServiceImpl implements AccountService {
     }
 
     @Override
-    public CallService calls() {
-        return new CallServiceImpl(id);
+    public VoiceService calls() {
+        return new VoiceServiceImpl(id);
     }
 
 }

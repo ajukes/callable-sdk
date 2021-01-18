@@ -1,8 +1,8 @@
 package io.callable.sdk;
 
-import uk.co.viva.dataobjects.trunk.Trunk;
-import uk.co.viva.dataobjects.trunk.TrunkPostRequest;
-import uk.co.viva.dataobjects.trunk.TrunkPutRequest;
+import io.callable.sdk.dto.trunk.Trunk;
+import io.callable.sdk.dto.trunk.TrunkPostRequest;
+import io.callable.sdk.dto.trunk.TrunkPutRequest;
 
 import java.util.List;
 
@@ -42,8 +42,8 @@ class TrunkServiceImpl extends ServiceImpl implements TrunkService {
     }
 
     @Override
-    public void update(TrunkPutRequest putRequest) {
-        client.put(String.format(BASE_URL, id) + "/" + putRequest.getId(), putRequest, Void.class);
+    public void update(TrunkPutRequest putRequest, String childId) {
+        client.put(String.format(BASE_URL, id) + "/" + childId, putRequest, Void.class);
     }
 
     @Override

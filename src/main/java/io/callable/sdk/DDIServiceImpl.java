@@ -1,8 +1,8 @@
 package io.callable.sdk;
 
-import uk.co.viva.dataobjects.ddi.DDI;
-import uk.co.viva.dataobjects.ddi.DDIPostRequest;
-import uk.co.viva.dataobjects.ddi.DDIPutRequest;
+import io.callable.sdk.dto.ddi.DDI;
+import io.callable.sdk.dto.ddi.DDIPostRequest;
+import io.callable.sdk.dto.ddi.DDIPutRequest;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -49,8 +49,8 @@ class DDIServiceImpl extends ServiceImpl implements DDIService {
     }
 
     @Override
-    public void update(DDIPutRequest putRequest) {
-        client.put(String.format(BASE_URL, id) + "/" + putRequest.getId(), putRequest, Void.class);
+    public void update(DDIPutRequest putRequest, String childId) {
+        client.put(String.format(BASE_URL, id) + "/" + childId, putRequest, Void.class);
     }
 
     @Override

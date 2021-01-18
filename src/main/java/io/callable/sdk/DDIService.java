@@ -1,8 +1,9 @@
 package io.callable.sdk;
 
-import uk.co.viva.dataobjects.ddi.DDI;
-import uk.co.viva.dataobjects.ddi.DDIPostRequest;
-import uk.co.viva.dataobjects.ddi.DDIPutRequest;
+
+import io.callable.sdk.dto.ddi.DDI;
+import io.callable.sdk.dto.ddi.DDIPostRequest;
+import io.callable.sdk.dto.ddi.DDIPutRequest;
 
 import java.util.List;
 
@@ -16,7 +17,7 @@ public interface DDIService {
 
     DDI create(DDIPostRequest postRequest);
 
-    void update(DDIPutRequest putRequest);
+    void update(DDIPutRequest putRequest, String id);
 
     void remove(String id);
 }
