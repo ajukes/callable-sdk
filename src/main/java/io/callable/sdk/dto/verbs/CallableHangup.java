@@ -10,4 +10,8 @@ public class CallableHangup {
     public CallableHangup(String reason) {
         this.reason = reason;
     }
+
+    public CallableVerb verb() {
+        return new CallableVerb(this);
+    }
 }

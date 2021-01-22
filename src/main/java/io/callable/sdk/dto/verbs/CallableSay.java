@@ -29,4 +29,9 @@ public class CallableSay {
         this.loop = loop;
         this.voice = GoogleTTSLanguage.English_UK_Standard_A_Female;
     }
+
+    public CallableVerb verb() {
+        return new CallableVerb(this);
+    }
+
 }

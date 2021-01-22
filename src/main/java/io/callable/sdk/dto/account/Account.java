@@ -7,6 +7,7 @@ import lombok.Getter;
 public class Account {
     private String id;
     private String name;
+    private String mbn;
     private String domain;
     private Address address;
 }

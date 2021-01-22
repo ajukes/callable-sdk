@@ -1,32 +1,22 @@
 package io.callable.sdk.dto;
 
-import io.callable.sdk.dto.verbs.CallableHangup;
+import io.callable.sdk.dto.verbs.CallableTag;
 import io.callable.sdk.dto.verbs.CallableTarget;
 import io.callable.sdk.dto.verbs.CallableVerb;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
-import java.util.Collections;
 import java.util.List;
 
 @Getter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class VoiceCall {
     private String callerId;
+    private CallableTag tag;
     private CallableTarget target;
     private List<CallableVerb> verbs;
-
-    public VoiceCall(String callerId, CallableTarget target, List<CallableVerb> verbs) {
-        this.callerId = callerId;
-        this.target = target;
-        this.verbs = verbs;
-    }
-
-    public VoiceCall(CallableTarget target, List<CallableVerb> verbs) {
-        this.target = target;
-        this.verbs = verbs;
-    }
-
-    public VoiceCall(CallableTarget target) {
-        this.target = target;
-        this.verbs = Collections.singletonList(new CallableVerb(new CallableHangup("no-reason")));
-    }
 }

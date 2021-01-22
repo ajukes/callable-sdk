@@ -12,4 +12,8 @@ public class CallableTag {
     public CallableTag(Map<String, String> data) {
         this.data = data;
     }
+
+    public CallableVerb verb() {
+        return new CallableVerb(this);
+    }
 }

@@ -59,6 +59,7 @@ class CallableHTTPClient {
 //                .setPropertyNamingStrategy(PropertyNamingStrategy.SNAKE_CASE)
                 .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
+        log.info("Authorising {}", url);
         Objects.requireNonNull(username);
         Objects.requireNonNull(password);
 

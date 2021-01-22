@@ -2,9 +2,13 @@ package io.callable.sdk.dto.device;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.callable.sdk.dto.device.flow.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @Getter
+@AllArgsConstructor
+@NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Device {
     private String id;

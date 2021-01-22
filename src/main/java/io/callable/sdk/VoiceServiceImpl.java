@@ -5,7 +5,7 @@ import io.callable.sdk.dto.VoiceCall;
 
 class VoiceServiceImpl extends ServiceImpl implements VoiceService {
 
-    private static final String BASE_URL = "customers/%s/calls";
+    private static final String BASE_URL = "channels/voice/%s";
 
     private String id;
 

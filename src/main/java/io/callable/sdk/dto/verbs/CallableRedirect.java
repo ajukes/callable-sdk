@@ -11,4 +11,8 @@ public class CallableRedirect {
     public CallableRedirect(Device device) {
         this.device = device;
     }
+
+    public CallableVerb verb() {
+        return new CallableVerb(this);
+    }
 }

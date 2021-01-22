@@ -16,4 +16,8 @@ public class CallableReject {
     public CallableReject(RejectType rejectType) {
         this.rejectType = rejectType;
     }
+
+    public CallableVerb verb() {
+        return new CallableVerb(this);
+    }
 }

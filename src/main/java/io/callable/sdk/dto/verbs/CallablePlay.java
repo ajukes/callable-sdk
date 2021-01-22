@@ -18,4 +18,8 @@ public class CallablePlay {
         this.url = url;
         this.loop = loop;
     }
+
+    public CallableVerb verb() {
+        return new CallableVerb(this);
+    }
 }
